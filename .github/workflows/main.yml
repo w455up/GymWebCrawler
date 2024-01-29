@@ -25,3 +25,6 @@ jobs:
 
     - name: Run Tests
       run: python WebCrawler.py  # 指定你的測試腳本的路徑
+      env:
+        TZ: 'Asia/Taipei'  # 設定時區
+        CSV_FILE_PATH: 'test.csv'
