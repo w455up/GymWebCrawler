@@ -38,32 +38,6 @@ def job():
 
     ws.append([peo, date, current_time, weekofday, dictionary['新北市']['淡水觀海']])
     wb.save(r'C:\Users\user\Desktop\爬蟲\test.xlsx') 
-    # 这里写你要运行的程序或函数
     print(f"已執行一次任務{datetime.now().strftime('%H:%M')}")
 
 job()
-# # 设置每天的定时时间（24小时制）
-# schedule.every(30).minutes.do(job)
-# # 可以设置多个定时任务，如下
-# # schedule.every().day.at("12:00").do(another_job)
-
-# # 让程序一直运行，直到手动终止
-# start_time = dt_time(6, 30)
-# end_time = dt_time(21, 30)
-# print(schedule.get_jobs())
-# # 让程序一直运行，每分钟检查一次是否有任务需要执行
-# while True:
-#     Now = datetime.now().time()
-    
-#     # 检查当前时间是否在指定的时间范围内
-#     if start_time <= Now <= end_time:
-#         schedule.run_pending()
-    
-#     elif input("输入 'quit' 即中止程序：").lower() == 'quit':
-#         print("程序终止。")
-#         schedule.clear()
-#         break
-        
-#     else:
-#         pass
-#     time.sleep(1)  # 每分钟检查一次是否有任务需要执行
