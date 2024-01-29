@@ -14,7 +14,7 @@ def job():
     number = soup.find_all('span', class_='number-current')
     peo = number[1].text
     current_time = datetime.now(pytz.timezone('Asia/Taipei')).strftime('%m-%d')
-    date = datetime.now().strftime('%H:%M')
+    date = datetime.now(pytz.timezone('Asia/Taipei')).strftime('%H:%M')
     weekday = ['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN']
     weekofday = weekday[datetime.now(pytz.timezone('Asia/Taipei')).weekday()]
 
