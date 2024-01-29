@@ -5,7 +5,7 @@ import requests
 from bs4 import BeautifulSoup
 
 def job():
-    wb = openpyxl.load_workbook(r'test.xlsx')
+    wb = openpyxl.load_workbook('test.xlsx')
     ws = wb.active
 
     url = 'http://www.tssc.tw/'
@@ -37,7 +37,7 @@ def job():
             dictionary[city][name]=msg   # 記錄地區和描述
 
     ws.append([peo, date, current_time, weekofday, dictionary['新北市']['淡水觀海']])
-    wb.save(r'test.xlsx') 
+    wb.save('test.xlsx') 
     print(f"已執行一次任務{datetime.now().strftime('%H:%M')}")
 
 job()
