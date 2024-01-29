@@ -1,8 +1,8 @@
-name: Crawl Data
+name: Crawl Data at 630
 
 on:
   schedule:
-    - cron: '30 6 * * *'
+    - cron: '30 14 * * *'
 
 jobs:
   crawl:
