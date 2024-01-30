@@ -35,4 +35,5 @@ jobs:
         git config --global user.email "linchenjay13888@gmail.com"
         git add test.csv && echo A
         git commit -m 'upload pa result' && echo B
+        git push -u origin master && echo 
 
