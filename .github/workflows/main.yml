@@ -34,6 +34,6 @@ jobs:
         git config --global user.name "w455up"
         git config --global user.email "linchenjay13888@gmail.com"
         git add test.csv && echo A
-        git commit -m 'upload pa result' && echo B
-        git push -u origin master && echo c
+        git commit -m 'Update test.csv from GitHub Actions' && echo B
+        git push -u origin main && echo c
 
